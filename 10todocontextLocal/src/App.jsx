@@ -17,6 +17,7 @@ function App() {
 
   const deleteTodo = (id) => {
     setTodos((prev) => prev.filter((todo) => todo.id !== id));
+    // keep this todo if its id is NOT equal to the id we want to delete.
   };
 
   const toggleComplete = (id) => {
