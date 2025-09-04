@@ -5,7 +5,7 @@ import { NewsBoard } from "./components/NewsBoard";
 
 
 function App() {
-  const [category, setCategory] = useState("general");
+  const [category, setCategory] = useState("technology");
 
   return (
     <div>
