@@ -1,8 +1,8 @@
 import React from "react";
 
-function NavBar({setCategory}) {
+function NavBar({ setCategory }) {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary sticky-top bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
           Navbar
@@ -11,35 +11,60 @@ function NavBar({setCategory}) {
           className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <div className="nav-link" onClick={() => setCategory("technology")}>Technology</div>
-            </li>
+        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div className="navbar-nav">
+            <a
+              className="nav-link active"
+              aria-current="page"
+              href="#"
+              onClick={() => setCategory("general")}
+            >
+              General
+            </a>
+            <a
+              className="nav-link"
+              href="#"
+              onClick={() => setCategory("technology")}
+            >
+              Technology
+            </a>
 
-            <li className="nav-item">
-              <div className="nav-link" onClick={() => setCategory("business")}>Business8</div>
-            </li>
-
-            <li className="nav-item">
-              <div className="nav-link" onClick={() => setCategory("health")}>Health</div>
-            </li>
-
-            <li className="nav-item">
-              <div className="nav-link" onClick={() => setCategory("sports")}>Sports</div>
-            </li>
-
-            <li className="nav-item">
-              <div className="nav-link" onClick={() => setCategory("entertainment")}>Entertainment</div>
-            </li>
-          </ul>
+            <a
+              className="nav-link"
+              href="#"
+              onClick={() => setCategory("business")}
+            >
+              Business
+            </a>
+            <a
+              className="nav-link"
+              href="#"
+              onClick={() => setCategory("health")}
+            >
+              Health
+            </a>
+            <a
+              className="nav-link"
+              href="#"
+              onClick={() => setCategory("sports")}
+            >
+              Sports
+            </a>
+            <a
+              className="nav-link"
+              href="#"
+              onClick={() => setCategory("entertainment")}
+            >
+              Entertainment
+            </a>
+          </div>
         </div>
       </div>
     </nav>

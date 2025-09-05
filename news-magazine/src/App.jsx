@@ -5,7 +5,6 @@ import Navboard from "./components/Navboard";
 
 function App() {
   const [category, setCategory] = useState("general");
-
   return (
     <div>
       <NavBar setCategory={setCategory}/>
